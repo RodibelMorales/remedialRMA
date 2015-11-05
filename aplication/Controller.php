@@ -1,11 +1,11 @@
 <?php
-
-abstract class AppController
+include ("Database.php");
+abstract class AppController extends ClassPDO
 {
 	/**
 	  * Clase abtracta AppController
 	  * 
-	  * @author Sergio Olan <sergio199468@gmail.com>
+	  * @author Rodibel Morales, Saul Menesess
 	 */
 
 
@@ -13,7 +13,8 @@ abstract class AppController
 
 	public function __construct(){
 		$this->_view = new View(new Request);
-		$this->db = new ClassPDO();
+		//$this->db = new ClassPDO();
+		parent::__construct();
 	}
 
 	abstract function index();

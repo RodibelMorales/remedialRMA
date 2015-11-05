@@ -5,9 +5,9 @@ class Bootstrap
 
 	/**
 	 * Clase Boostrap 
-	 * Contro para ver si estan disponibles los controladores.
+	 * Controlador para ver si estan disponibles los controladores.
 	 * 
-	 * @author Sergio Olan <sergio199468@gmail.com>
+	 * @author Rodibel Morales, Saul Meneses
 	 */
 
 	public static function run(Request $peticion){
@@ -25,7 +25,6 @@ class Bootstrap
 			}else{
 				$metodo = "index";
 			}
-
 			if ($metodo=="login") {
 				
 			}else{

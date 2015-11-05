@@ -6,6 +6,7 @@
 class ClassPDO
 {
 	 /**
+	  * @author Rodibel Morales, Saul Meneses
 	 * Archivo de clase de conexión PDO
 	 *
 	 * Clase que permite acciones CRUD usando PDO
@@ -28,7 +29,7 @@ class ClassPDO
   	* Constructor de la clase
   	* @return void
   	*/
-	public function __construct($drive="mysql", $host="localhost", $database="gestion", $username="root", $password="Pctecno01"){
+	public function __construct($drive="mysql", $host="localhost", $database="gestion", $username="root", $password="moh"){
 		$this->drive = $drive;
 		$this->host = $host;
 		$this->database = $database;
@@ -91,6 +92,13 @@ class ClassPDO
 
 		if (!empty($options["fields"])) {
 			$fields = $options["fields"];
+		}
+
+		if(!empty($options['join'])) // JOIN
+		{
+			
+			$parameters .= ' JOIN '.$options['join'].' ON '.$options['on'];
+		
 		}
 
 		if (!empty($options["conditions"])) {
@@ -247,7 +255,6 @@ class ClassPDO
 
 
 
-$db = new ClassPDO();
 
 /*
 class Database extends PDO{

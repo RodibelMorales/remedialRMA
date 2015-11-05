@@ -5,7 +5,7 @@ class View
 	/**
 	  * Clase Vista
 	 * 
-	 * @author Sergio Olan <sergio199468@gmail.com>
+	 * @author Rodibel Morales, Saul Meneses
 	 */
 	
 	private $_controlador;
@@ -33,9 +33,9 @@ class View
 		}
 
 		if (is_readable($rutaView)){
-			require_once ROOT . "views" . DS . "layouts" . DS . DEFAULT_LAYOUT . DS . "header.php";
+			require_once ROOT.'views'.DS.'layouts'.DS.$layout.DS.'header.php';
 			require_once $rutaView;
-			require_once ROOT . "views" . DS . "layouts" . DS . DEFAULT_LAYOUT . DS . "footer.php";
+			require_once ROOT.'views'.DS.'layouts'.DS.$layout.DS.'footer.php';
 		}else{
 			throw new Exception("Error de vista");
 		}

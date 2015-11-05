@@ -1,6 +1,24 @@
-<h2>Inicio de sesión</h2>
-<form action="<?php echo APP_URL;?>usuarios/login" method="POST">
-<p>Username: <input type="text" name="username"></p>
-<p>Password: <input type="text" name="password"></p>
-<button type="submit">Entrar</button>
-</form>
+<div class="row">
+	<divc class="col-md-6 contenedorFomr">
+		<h2 id="tituloLogin">Bienvenido</h2>
+		<form class="form-horizontal" action="<?php echo APP_URL;?>usuarios/login" method="POST">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Usuername</label>
+				<div class="col-sm-10">
+					<input class="form-control"  type="text" name="username" placeholder="Username">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Passwrod</label>
+				<div class="col-sm-10">
+					<input class="form-control" type="password" name="password" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group">
+		    	<div class="col-sm-offset-2 col-sm-10">
+		      		<button type="submit" class="btn btn-default">Sign in</button>
+		    	</div>
+		    </div>
+		</form>
+	</div>
+</div>

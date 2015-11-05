@@ -3,7 +3,7 @@
  * Clase para validar filtro de datos
  * 
  * Colección de funciones para validar filtro de datos, rangos y valores
- * @author  Sergio Olan <sergio199468@gmail.com>
+ * @author Rodibel Morales, Saul Meneses
  */
 class Validations {
 	

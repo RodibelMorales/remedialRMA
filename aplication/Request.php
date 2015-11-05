@@ -3,7 +3,7 @@ class Request{
 	/**
 	  * Clase Request
 	  * 
-	  * @author Sergio Olan <sergio199468@gmail.com>
+	  * @author Rodibel Morales, Saul Meneses
 	 */
 	private $_controlador;
 	private $_metodo;
