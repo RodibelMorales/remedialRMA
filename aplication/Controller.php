@@ -5,7 +5,7 @@ abstract class AppController extends ClassPDO
 	/**
 	  * Clase abtracta AppController
 	  * 
-	  * @author Rodibel Morales, Saul Menesess
+	  * @author Rodibel Morales
 	 */
 
 

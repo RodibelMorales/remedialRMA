@@ -23,6 +23,8 @@
 					<li><a href="<?php echo APP_URL."tareas"; ?>">Tareas</a></li>
 					<li><a href="<?php echo APP_URL."usuarios"; ?>">Usuarios</a></li>
 					<li><a href="<?php echo APP_URL."categorias"; ?>">Categorias</a></li>
+					<li><a href="<?php echo APP_URL."calendarios"; ?>">Calendarios</a></li>
+					<li><a href="<?php echo APP_URL."eventos"; ?>">Eventos</a></li>
 				</ul>
 			</nav>
 		</header>

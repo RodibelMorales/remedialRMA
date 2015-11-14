@@ -7,7 +7,7 @@ class categoriasController extends AppController
 	 * Archivo de clase de acciones CRUD en PDO
 	 *
 	 * Clase que permite acciones CRUD de la seccion categorias
-	 * @author Rodibel Morales, Saul Meneses
+	 * @author Rodibel Morales
 	 */
 	public function __construct(){
 		parent::__construct();

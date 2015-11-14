@@ -10,6 +10,9 @@ class View
 	
 	private $_controlador;
 	private $_metodo;
+	public $tareas;
+	public $calendarios;
+	public $eventos;
 	public function __construct(Request $peticion){
 		$this->_controlador = $peticion->getControlador();
 		$this->_metodo = $peticion->getMetodo();//necitamos ver si necesitamos cambiar el layout

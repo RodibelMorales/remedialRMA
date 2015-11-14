@@ -11,6 +11,7 @@ class tareasController extends AppController
 		//$tareas = $this->loadmodel("tarea");
 		
 		$this->_view->titulo = "Pagina principal";
+		//$this->_view->categorias = $this->find("tareas", "all", NULL);
 		
 
 		$options = array(
@@ -25,6 +26,7 @@ class tareasController extends AppController
 
 		$this->_view->tareas = $this->find("tareas", "join", $options);
 		$this->_view->renderizar("index");
+		//$this->_view->renderizar("index");
 		/*
 		$this->_view->titulo = "Página principal";
 		$this->_view->renderizar("index");

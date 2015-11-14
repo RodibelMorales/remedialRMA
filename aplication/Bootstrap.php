@@ -7,7 +7,7 @@ class Bootstrap
 	 * Clase Boostrap 
 	 * Controlador para ver si estan disponibles los controladores.
 	 * 
-	 * @author Rodibel Morales, Saul Meneses
+	 * @author Rodibel Morales
 	 */
 
 	public static function run(Request $peticion){
