@@ -1,0 +1,15 @@
+<h2>Agregar Evento</h2>
+<form action="<?php echo APP_URL."eventos/add"; ?>" method="POST">
+		<p>Titulo: <input type="text" name="titulo"></p>
+		<p>calendario:
+		    <select name="calendario_id">
+		        <option value="">Selecciona ...</option>
+		        <?php foreach ($this->calendarios as $calendario): ?>
+		        <option value="<?php echo $calendario["id"]; ?>"><?php echo $calendario["nombre"]; ?></option>
+		        <?php endforeach; ?>
+		    </select>
+        </p>
+		<p>Fecha: <input type="text" name="fecha"></p>
+		<p>Lugar: <input type="text" name="lugar"></p>
+		<p><input type="submit"></p>
+</form>

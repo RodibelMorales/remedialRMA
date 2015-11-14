@@ -1,0 +1,7 @@
+<h2>Editar calendarios</h2>
+
+<form action="<?php echo APP_URL."calendarios/edit"; ?>" method="POST">
+		<input type="hidden" name="id" value="<?php echo $this->calendarios["id"]; ?>">
+		<p>Nombre: <input type="text" name="nombre" value="<?php echo $this->calendarios["nombre"]; ?>"></p>
+		<p><input type="submit"></p>
+</form>

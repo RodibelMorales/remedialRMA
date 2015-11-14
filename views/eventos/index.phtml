@@ -1,0 +1,38 @@
+	<h2>Listado de tareas</h2>
+	<div class="row">
+		<div class="col-md-12">
+			<a class="btn btn-success btnAddTareas" href="<?php echo APP_URL."eventos/add"; ?>">Agregar Evento</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table">
+		<tr>
+			<th>ID</th>
+			<th>Calendario</th> 
+			<th>Titulo</th>
+			<th>Fecha</th>
+			<th>Lugar</th>
+			<th>Opciones</th>
+		</tr>
+		<?php foreach ($this->eventos as $evento): ?>
+		<tr>
+			<td><?php echo $evento["id"]; ?></td>
+			<td><?php echo $evento["calendario"]; ?></td>
+			<td><?php echo $evento["titulo"]; ?></td>
+			<td><?php echo $evento["fecha"]; ?></td>
+			<td><?php echo $evento["lugar"]; ?></td>
+			<td><?php ?>
+				<a href="<?php echo APP_URL."tareas/edit/".$tarea["id"]; ?>">Editar</a>
+				<a href="<?php echo APP_URL."tareas/delete/".$tarea["id"]; ?>">Eliminar</a>
+			</td>
+		</tr>	
+		<?php endforeach; ?>
+			</table>
+		</div>
+	</div>
+
+
+
+
